@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esma-ecb-merging-sorting"
+version = "0.1.0"
+description = "ECB+ESMA securitisation loan-level data processing pipeline (merge, harmonise, country-group, sort)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Proprietary"}
+authors = [{name = "Repository authors"}]
+dependencies = [
+  "pandas",
+  "numpy",
+  "tqdm",
+  "openpyxl",
+  "duckdb",
+  "psutil",
+]
+
+[project.optional-dependencies]
+docs = [
+  "sphinx>=7",
+  "sphinx-rtd-theme>=2",
+  "myst-parser>=2",
+]
+dev = [
+  "ruff>=0.4",
+  "pytest>=8",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
