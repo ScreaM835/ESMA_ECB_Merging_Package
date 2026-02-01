@@ -8,7 +8,7 @@ from datetime import date
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "src")))
 
 project = "ECB–ESMA Securitisation Data Processing Pipeline"
-author = "Repository authors"
+author = "Jonathan Chung"
 copyright = f"{date.today().year}, {author}"
 
 extensions = [
