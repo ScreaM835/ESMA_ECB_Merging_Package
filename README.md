@@ -1,7 +1,6 @@
 # ECB–ESMA Securitisation Data Processing Pipeline (Python Package)
 
-This repository packages the original (working) notebook pipeline into a reusable **Python package**.
-The core methodology and variable naming inside the stage implementations are preserved.
+This is a reusable **Python package** which processes (merges and sorts) ECB and ESMA RMBS datasets.
 
 The pipeline processes securitisation loan‑level data from two regulatory sources:
 
